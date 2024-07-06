@@ -1,7 +1,5 @@
 # Cloudflare Worker - Status Page Pro
 
-[![](https://dcbadge.vercel.app/api/server/gE39mt6WXd)](https://discord.gg/gE39mt6WXd)
-
 Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://cf-worker-status-page-pro-production.yunsii.workers.dev/) out! 🚀
 
 ## Features
@@ -32,9 +30,12 @@ Also, prepare the following secrets
 You can use GitHub Actions to deploy on your own.
 
 1. You should use this template to create a new repository
+
 2. Navigate to your new **GitHub repository > Settings > Secrets and variables > Actions** and add the following secrets:
 
    ```yaml
+   - Name: CLOUDFLARE_ACCOUNT_ID
+   
    - Name: CLOUDFLARE_API_TOKEN
 
    - Name: SECRET_SLACK_WEBHOOK_URL (optional)
@@ -47,9 +48,14 @@ You can use GitHub Actions to deploy on your own.
 3. Edit [config.ts](./src/config.ts) to adjust configuration and list all of your websites/APIs you want to monitor
 
 4. Push to `master` branch to trigger the deployment
+
 5. 🎉
-6. _\(optional\)_ Go to [Cloudflare Workers settings](https://dash.cloudflare.com/?to=/workers) and assign custom domain/route
-7. _\(optional\)_ Edit [wrangler.toml](./wrangler.toml) to adjust Worker settings or CRON Trigger schedule, especially if you are on [Workers Free plan](#workers-kv-free-tier)
+
+6. *(MDL edit)* Add [a new namespace `KV_STORE`](https://developers.cloudflare.com/kv/get-started/) to the Cloudflare workers project. Copy the new `id` for the `KV_STORE` binding to `wrangler.toml`.
+
+7. *(optional)* Go to [Cloudflare Workers settings](https://dash.cloudflare.com/?to=/workers) and assign custom domain/route
+
+8. *(optional)* Edit [wrangler.toml](./wrangler.toml) to adjust Worker settings or CRON Trigger schedule, especially if you are on [Workers Free plan](#workers-kv-free-tier)
 
 ## Workers KV free tier
 
@@ -65,41 +71,39 @@ The Workers Free plan includes limited KV usage, but the quota is sufficient for
 
 ## Running project locally
 
-**Requirements**
+Requirements
 
 - Pnpm (`npm i -g pnpm`)
 
 ### Steps to get server up and running
 
-**Install dependencies**
+- Install dependencies
 
-```
+```bash
 pnpm i
 ```
 
-**Login With Wrangler to Cloudflare**
+- Login With Wrangler to Cloudflare
 
-```
+```bash
 npx wrangler login
 ```
 
-**Create your KV namespace in cloudflare**
+- Create your KV namespace in cloudflare
 
-```
-On the workers page navigate to KV, and create a namespace
-```
+-- On the workers page navigate to KV, and create a namespace
 
-**Update your wrangler.toml with**
+- Update your wrangler.toml with
 
-```
+```yaml
 kv-namespaces = [{binding="KV_STORE", id="<KV_ID>", preview_id="<KV_ID>"}]
 ```
 
-_Note: you may need to change `kv-namespaces` to `kv_namespaces`_
+*Note: you may need to change `kv-namespaces` to `kv_namespaces`*
 
-**Run**
+- Run
 
-```
+```bash
 pnpm run dev
 ```
 
@@ -109,5 +113,6 @@ You can use remote CSV monitors like [this template](https://docs.google.com/spr
 
 ## Credits
 
+- [yunsii/cf-worker-status-page-pro](https://github.com/yunsii/cf-worker-status-page-pro)
 - [eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page)
 - [Vike](https://vike.dev/)

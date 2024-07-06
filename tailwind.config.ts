@@ -5,7 +5,7 @@ import { addDynamicIconSelectors } from 'tailwindcss-plugin-iconify'
 import type { Config } from 'tailwindcss'
 
 const config = {
-  darkMode: ['class'],
+  //darkMode: ['class'],
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
   ],
@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['"Source Sans 3"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

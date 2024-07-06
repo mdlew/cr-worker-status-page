@@ -139,12 +139,12 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
           return (
             <li key={item} className={cls`[&:not(:last-child)]:mb-2`}>
               <div className='mb-1 flex items-center gap-2'>
-                <h2 className='text-slate-950'>
+                <h2 className='text-slate-950 dark:text-slate-50'>
                   {title}
                 </h2>
                 {!!info.length && (
                   <Tooltip>
-                    <TooltipTrigger className={cls` size-5 text-slate-500`}>
+                    <TooltipTrigger className={cls` size-5 text-slate-500 dark:text-slate-400`}>
                       <span className={cls`i-ic--outline-info size-full`} />
                     </TooltipTrigger>
                     <TooltipContent
@@ -173,7 +173,7 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
                 && (!monitorConfig.method || monitorConfig.method.toUpperCase() === 'GET')
                 && (
                   <a
-                    className='i-ic--outline-open-in-new size-5 text-slate-500 hover:text-slate-400'
+                    className='i-ic--outline-open-in-new size-5 text-slate-500 dark:text-slate-400 hover:text-slate-400'
                     href={monitorConfig.url}
                     target='_blank'
                     rel='noreferrer'
@@ -188,8 +188,8 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
                   const targetDateChecksItem = getTargetDateChecksItem(monitorData, dateItem)
                   const renderStatus = getChecksItemRenderStatus(monitorData, dateItem)
 
-                  let color = cls`bg-gray-300`
-                  let textColor = cls`text-gray-300`
+                  let color = cls`bg-gray-300 dark:bg-slate-700`
+                  let textColor = cls`text-gray-300 dark:text-slate-700`
                   let statusStr: React.ReactNode = null
 
                   switch (renderStatus) {
