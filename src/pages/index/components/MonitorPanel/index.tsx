@@ -43,7 +43,7 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
   const monitorIds = (Object.keys(data.monitorHistoryData) || [])
   const allOperational = data.lastUpdate?.checks.allOperational
 
-  const titleCls = allOperational ? cls`border-green-500 bg-green-300 text-green-800` : cls`border-red-500 bg-red-300 text-red-800`
+  const titleCls = allOperational ? cls`border-green-500 bg-green-300 text-green-800 dark:bg-green-800 dark:text-green-300` : cls`border-red-500 bg-red-300 text-red-800 dark:bg-red-800 dark:text-red-300`
   return (
     <div {...restDivProps}>
       <div
@@ -188,14 +188,14 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
                   const targetDateChecksItem = getTargetDateChecksItem(monitorData, dateItem)
                   const renderStatus = getChecksItemRenderStatus(monitorData, dateItem)
 
-                  let color = cls`bg-gray-300 dark:bg-slate-700`
-                  let textColor = cls`text-gray-300 dark:text-slate-700`
+                  let color = cls`bg-gray-300 dark:bg-gray-700`
+                  let textColor = cls`text-gray-300 dark:text-gray-700`
                   let statusStr: React.ReactNode = null
 
                   switch (renderStatus) {
                     case 'all-good':
-                      color = cls`bg-green-500`
-                      textColor = cls`text-green-500`
+                      color = cls`bg-green-500 dark:bg-green-700`
+                      textColor = cls`text-green-500 dark:text-green-700`
                       statusStr = 'All good'
                       break
                     case 'all-incidents':
@@ -204,13 +204,13 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
                       statusStr = `${targetDateChecksItem!.fails} incident(s)`
                       break
                     case 'latest-incident':
-                      color = cls`bg-red-500`
-                      textColor = cls`text-red-500`
+                      color = cls`bg-red-500 dark:bg-red-700`
+                      textColor = cls`text-red-500 dark:text-red-700`
                       statusStr = `${targetDateChecksItem!.fails} incident(s)`
                       break
                     case 'has-incident':
-                      color = cls`bg-yellow-500`
-                      textColor = cls`text-yellow-500`
+                      color = cls`bg-yellow-500 dark:bg-yellow-700`
+                      textColor = cls`text-yellow-500 dark:text-yellow-700`
                       statusStr = `${targetDateChecksItem!.fails} incident(s)`
                       break
                     default:
