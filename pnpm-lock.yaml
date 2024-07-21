@@ -161,8 +161,8 @@ devDependencies:
     specifier: ^5.0.13
     version: 5.0.13(@types/node@20.11.25)
   zx:
-    specifier: ^7.2.3
-    version: 7.2.3
+    specifier: ^8.1.4
+    version: 8.1.4
 
 packages:
 
@@ -1748,6 +1748,7 @@ packages:
 
   /@types/jsonfile@6.1.4:
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
+    requiresBuild: true
     dependencies:
       '@types/node': 20.11.25
     dev: true
@@ -8101,4 +8102,13 @@ packages:
       webpod: 0.0.2
       which: 3.0.1
       yaml: 2.4.0
+    dev: true
+
+  /zx@8.1.4:
+    resolution: {integrity: sha512-QFDYYpnzdpRiJ3dL2102Cw26FpXpWshW4QLTGxiYfIcwdAqg084jRCkK/kuP/NOSkxOjydRwNFG81qzA5r1a6w==}
+    engines: {node: '>= 12.17.0'}
+    hasBin: true
+    optionalDependencies:
+      '@types/fs-extra': 11.0.4
+      '@types/node': 20.11.25
     dev: true
