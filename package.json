@@ -69,7 +69,7 @@
     "unplugin-auto-import": "^0.17.5",
     "unplugin-polish-tagged-templates": "0.1.1-beta.2",
     "vite": "^5.0.13",
-    "zx": "^7.2.3"
+    "zx": "^8.1.4"
   },
   "lint-staged": {
     "*": "eslint --fix"
