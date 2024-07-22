@@ -16,7 +16,7 @@
     "postinstall": "npm run public:assets"
   },
   "dependencies": {
-    "@brillout/json-serializer": "^0.5.8",
+    "@brillout/json-serializer": "^0.5.13",
     "@cloudflare/kv-asset-handler": "^0.2.0",
     "@floating-ui/react": "^0.26.19",
     "@vitejs/plugin-react": "^4.2.1",
