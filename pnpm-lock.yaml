@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@brillout/json-serializer':
-    specifier: ^0.5.8
-    version: 0.5.8
+    specifier: ^0.5.13
+    version: 0.5.13
   '@cloudflare/kv-asset-handler':
     specifier: ^0.2.0
     version: 0.2.0
@@ -516,8 +516,8 @@ packages:
     resolution: {integrity: sha512-1T8WlD75eeFSMrptGy8jiLHmfHgMmSjWvLOIUvHmSVZt+6k0eQqYUoK4KbmE4T9pVLIfxvZSOm2D68VEqKRHRw==}
     dev: false
 
-  /@brillout/json-serializer@0.5.8:
-    resolution: {integrity: sha512-vEuXw30ok+mJfJutOxXKBb4lBJ0HymA7lev9PcYK6W/hzjhCTPk9Bdk85HrcNcKZWRQiwoWtw0F2Di4TRJ7ssQ==}
+  /@brillout/json-serializer@0.5.13:
+    resolution: {integrity: sha512-9FpmgpuoSISw6fAPVB2qwW1dGAADN28YbWpfwOErfcZxpBH4lsnejuY89qcivInnWXYJvyyPwghCuOTbtuaYFg==}
     dev: false
 
   /@brillout/picocolors@1.0.10:
@@ -6428,7 +6428,7 @@ packages:
       react-dom: '>=18'
     dependencies:
       '@brillout/import': 0.2.3
-      '@brillout/json-serializer': 0.5.8
+      '@brillout/json-serializer': 0.5.13
       isbot-fast: 1.2.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -7693,7 +7693,7 @@ packages:
         optional: true
     dependencies:
       '@brillout/import': 0.2.3
-      '@brillout/json-serializer': 0.5.8
+      '@brillout/json-serializer': 0.5.13
       '@brillout/picocolors': 1.0.10
       '@brillout/require-shim': 0.1.2
       '@brillout/vite-plugin-server-entry': 0.4.4
