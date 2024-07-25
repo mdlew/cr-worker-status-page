@@ -40,15 +40,15 @@ dependencies:
     version: 0.4.165(react-streaming@0.3.42)(vite@5.0.13)
   wrangler:
     specifier: ^3.36.0
-    version: 3.36.0(@cloudflare/workers-types@4.20240222.0)
+    version: 3.36.0(@cloudflare/workers-types@4.20240725.0)
 
 devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.6.3
     version: 2.8.0(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@0.1.2)(eslint-plugin-react-hooks@4.6.2)(eslint-plugin-react-refresh@0.4.9)(eslint-plugin-react@7.34.0)(eslint-ts-patch@8.57.0-0)(typescript@5.5.4)
   '@cloudflare/workers-types':
-    specifier: ^4.20240222.0
-    version: 4.20240222.0
+    specifier: ^4.20240725.0
+    version: 4.20240725.0
   '@commitlint/cli':
     specifier: ^18.4.4
     version: 18.6.1(@types/node@20.11.25)(typescript@5.5.4)
@@ -650,8 +650,8 @@ packages:
     dev: false
     optional: true
 
-  /@cloudflare/workers-types@4.20240222.0:
-    resolution: {integrity: sha512-luO0BdK3rLlCv3B240+cTrfqm+XSbHtpk+88aJtGwzyVK9QF/Xz8lBgE/oZZLN8nCTmOvxAZnszyxUuZ8GP8Cg==}
+  /@cloudflare/workers-types@4.20240725.0:
+    resolution: {integrity: sha512-L6T/Bg50zm9IIACQVQ0CdVcQL+2nLkRXdPz6BsXF3SlzgjyWR5ndVctAbfr/HLV7aKYxWnnEZsIORsTWb+FssA==}
 
   /@commitlint/cli@18.6.1(@types/node@20.11.25)(typescript@5.5.4):
     resolution: {integrity: sha512-5IDE0a+lWGdkOvKH892HHAZgbAjcj1mT5QrfA/SVbLJV/BbBMGyKN0W5mhgjekPJJwEQdVNvhl9PwUacY58Usw==}
@@ -8274,7 +8274,7 @@ packages:
       '@cloudflare/workerd-windows-64': 1.20240314.0
     dev: false
 
-  /wrangler@3.36.0(@cloudflare/workers-types@4.20240222.0):
+  /wrangler@3.36.0(@cloudflare/workers-types@4.20240725.0):
     resolution: {integrity: sha512-Fywf9RGAePIuIDcsSg4BW+lDUZX1jh2jN+TtmZOwG5Ewdr9dJGP3dxoFa85eQQZP1VLvY4lsqrKy67JqOuP9Gw==}
     engines: {node: '>=16.17.0'}
     hasBin: true
@@ -8285,7 +8285,7 @@ packages:
         optional: true
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240222.0
+      '@cloudflare/workers-types': 4.20240725.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
