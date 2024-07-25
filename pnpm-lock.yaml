@@ -146,8 +146,8 @@ devDependencies:
     specifier: ^4.16.2
     version: 4.16.2
   type-fest:
-    specifier: ^4.12.0
-    version: 4.12.0
+    specifier: ^4.23.0
+    version: 4.23.0
   typescript:
     specifier: ^5.5.4
     version: 5.5.4
@@ -7754,8 +7754,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.12.0:
-    resolution: {integrity: sha512-5Y2/pp2wtJk8o08G0CMkuFPCO354FGwk/vbidxrdhRGZfd0tFnb4Qb8anp9XxXriwBgVPjdWbKpGl4J9lJY2jQ==}
+  /type-fest@4.23.0:
+    resolution: {integrity: sha512-ZiBujro2ohr5+Z/hZWHESLz3g08BBdrdLMieYFULJO+tWc437sn8kQsWLJoZErY8alNhxre9K4p3GURAG11n+w==}
     engines: {node: '>=16'}
     dev: true
 
