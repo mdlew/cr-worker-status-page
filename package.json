@@ -30,7 +30,7 @@
     "wrangler": "^3.67.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.3",
+    "@antfu/eslint-config": "^2.24.0",
     "@cloudflare/workers-types": "^4.20240725.0",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.6.3",
