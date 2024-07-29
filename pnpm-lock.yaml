@@ -36,8 +36,8 @@ dependencies:
     specifier: 0.1.0-next.1
     version: 0.1.0-next.1
   vike:
-    specifier: 0.4.165
-    version: 0.4.165(react-streaming@0.3.42)(vite@5.3.5)
+    specifier: 0.4.181
+    version: 0.4.181(react-streaming@0.3.42)(vite@5.3.5)
   wrangler:
     specifier: ^3.67.1
     version: 3.67.1(@cloudflare/workers-types@4.20240725.0)
@@ -525,10 +525,6 @@ packages:
     resolution: {integrity: sha512-9FpmgpuoSISw6fAPVB2qwW1dGAADN28YbWpfwOErfcZxpBH4lsnejuY89qcivInnWXYJvyyPwghCuOTbtuaYFg==}
     dev: false
 
-  /@brillout/picocolors@1.0.10:
-    resolution: {integrity: sha512-dh+JJlsBf3QYX+91Ezma8RLKNOjGDoBBmORv/NzRpQuasdyzwQCMXGGjsDu12ZhGz92TqQbL9pv79rvbheI21A==}
-    dev: false
-
   /@brillout/picocolors@1.0.14:
     resolution: {integrity: sha512-XhyZY3/FUh56mDuLIjv5kN9qy+oQj7A/d2uQ6cJJ4uVv55+velua3abcrM5WIvs2RHZGA3EE7S9FWo+TjF10ew==}
     dev: false
@@ -537,8 +533,8 @@ packages:
     resolution: {integrity: sha512-3I4LRHnVZXoSAsEoni5mosq9l6eiJED58d9V954W4CIZ88AUfYBanWGBGbJG3NztaRTpFHEA6wB3Hn93BmmJdg==}
     dev: false
 
-  /@brillout/vite-plugin-server-entry@0.4.4:
-    resolution: {integrity: sha512-jS2CX4qcYdim09/kR83I+6HDA2JGrhP1HtX1hqPnDXna44aqsgRIxOzjoah6widA8XAykAWBwljynwK5nwQuGA==}
+  /@brillout/vite-plugin-server-entry@0.4.7:
+    resolution: {integrity: sha512-G/wHFx/JdFUA9kPSPDT0nIJH1wmgIwUIY27RL4N6EaHeaXgN4zSCBZTNvvKHyojvMxMw825m4vE0VksHXLyOng==}
     dependencies:
       '@brillout/import': 0.2.3
     dev: false
@@ -2259,7 +2255,7 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.0
+      semver: 7.6.3
       ts-api-utils: 1.3.0(typescript@5.5.4)
       typescript: 5.5.4
     transitivePeerDependencies:
@@ -2281,7 +2277,7 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.0
+      semver: 7.6.3
       ts-api-utils: 1.3.0(typescript@5.5.4)
       typescript: 5.5.4
     transitivePeerDependencies:
@@ -2303,7 +2299,7 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.0
+      semver: 7.6.3
       ts-api-utils: 1.3.0(typescript@5.5.4)
       typescript: 5.5.4
     transitivePeerDependencies:
@@ -2535,6 +2531,7 @@ packages:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: true
 
   /acorn@8.12.1:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
@@ -3776,13 +3773,8 @@ packages:
       safe-array-concat: 1.1.2
     dev: true
 
-  /es-module-lexer@1.4.1:
-    resolution: {integrity: sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==}
-    dev: false
-
   /es-module-lexer@1.5.4:
     resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
-    dev: true
 
   /es-object-atoms@1.0.0:
     resolution: {integrity: sha512-MZ4iQ6JwHOBQjahnjwaC1ZtIBH+2ohjamzAO3oaHcXYup7qxjF2fixyH+Q71voWHeOkI2q/TnJao/KfXYIZWbw==}
@@ -3947,7 +3939,7 @@ packages:
       eslint: '>=6.0.0'
     dependencies:
       eslint: /eslint-ts-patch@8.57.0-0
-      semver: 7.6.0
+      semver: 7.6.3
     dev: true
 
   /eslint-config-flat-gitignore@0.1.8:
@@ -4065,7 +4057,7 @@ packages:
       get-tsconfig: 4.7.6
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.0
+      semver: 7.6.3
       stable-hash: 0.0.4
       tslib: 2.6.2
     transitivePeerDependencies:
@@ -4136,7 +4128,7 @@ packages:
       globals: 15.8.0
       ignore: 5.3.1
       minimatch: 9.0.5
-      semver: 7.6.0
+      semver: 7.6.3
     dev: true
 
   /eslint-plugin-no-only-tests@3.1.0:
@@ -4333,7 +4325,7 @@ packages:
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.15
-      semver: 7.6.0
+      semver: 7.6.3
       vue-eslint-parser: 9.4.3(eslint-ts-patch@8.57.0-0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
@@ -5618,7 +5610,7 @@ packages:
       acorn: 8.12.1
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      semver: 7.6.0
+      semver: 7.6.3
     dev: true
 
   /jsonfile@4.0.0:
@@ -6251,7 +6243,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.13.1
-      semver: 7.6.0
+      semver: 7.6.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -7230,7 +7222,6 @@ packages:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
     engines: {node: '>=10'}
     hasBin: true
-    dev: true
 
   /send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
@@ -8252,12 +8243,12 @@ packages:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
     dev: true
 
-  /vike@0.4.165(react-streaming@0.3.42)(vite@5.3.5):
-    resolution: {integrity: sha512-WxyGHD5lrwAOs5KSZIOmwCBj3it6fFj+NA15pBeNDDdudk0do3jCWCxDcSAmFbgDZsqQWCSUwH/MVOjw7Q3r+Q==}
-    engines: {node: '>=16.0.0'}
+  /vike@0.4.181(react-streaming@0.3.42)(vite@5.3.5):
+    resolution: {integrity: sha512-pGhTonZ67yx3t4isx2UEKqx+ZhKJk1ZrwXBHfmy0Rs8T/u4JOIB58OahNDbVu1k4cvFeNzSqxcpI1BBVfaF5ZA==}
+    engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
-      react-streaming: '>=0.3.5'
+      react-streaming: '>=0.3.42'
       vite: '>=4.4.0'
     peerDependenciesMeta:
       react-streaming:
@@ -8265,15 +8256,16 @@ packages:
     dependencies:
       '@brillout/import': 0.2.3
       '@brillout/json-serializer': 0.5.13
-      '@brillout/picocolors': 1.0.10
+      '@brillout/picocolors': 1.0.14
       '@brillout/require-shim': 0.1.2
-      '@brillout/vite-plugin-server-entry': 0.4.4
-      acorn: 8.11.3
+      '@brillout/vite-plugin-server-entry': 0.4.7
+      acorn: 8.12.1
       cac: 6.7.14
-      es-module-lexer: 1.4.1
+      es-module-lexer: 1.5.4
       esbuild: 0.19.12
       fast-glob: 3.3.2
       react-streaming: 0.3.42(react-dom@18.3.1)(react@18.3.1)
+      semver: 7.6.3
       sirv: 2.0.4
       source-map-support: 0.5.21
       vite: 5.3.5(@types/node@22.0.0)
@@ -8327,7 +8319,7 @@ packages:
       espree: 9.6.1
       esquery: 1.5.0
       lodash: 4.17.21
-      semver: 7.6.0
+      semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
     dev: true
