@@ -63,7 +63,7 @@
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-plugin-iconify": "^1.4.5",
     "ts-node": "^10.9.2",
-    "tsx": "^4.16.2",
+    "tsx": "^4.16.3",
     "type-fest": "^4.23.0",
     "typescript": "^5.5.4",
     "unplugin-auto-import": "^0.18.2",
