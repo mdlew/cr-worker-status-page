@@ -30,14 +30,14 @@ dependencies:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
   react-streaming:
-    specifier: ^0.3.42
-    version: 0.3.42(react-dom@18.3.1)(react@18.3.1)
+    specifier: ^0.3.43
+    version: 0.3.43(react-dom@18.3.1)(react@18.3.1)
   tagged-classnames-free:
     specifier: 0.1.0-next.1
     version: 0.1.0-next.1
   vike:
     specifier: 0.4.182
-    version: 0.4.182(react-streaming@0.3.42)(vite@5.3.5)
+    version: 0.4.182(react-streaming@0.3.43)(vite@5.3.5)
   wrangler:
     specifier: ^3.67.1
     version: 3.67.1(@cloudflare/workers-types@4.20240725.0)
@@ -6866,8 +6866,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-streaming@0.3.42(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-HiJYIB9RgSB0iC7PuJLRn/a4qGo92ZkWooLdpLRbo5lRJwC9xriVTKZ8xz5EXiS/43O3wvnefrV8dS8oDtll9w==}
+  /react-streaming@0.3.43(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-ULRCEEJu9bhMiupIR96dmE7i1j1+y7K/InE5uuF3AcP0iFFzsqdKLltGqB72ktOhfwn++iyWnzh1PHnKqR/xNw==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -8243,7 +8243,7 @@ packages:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
     dev: true
 
-  /vike@0.4.182(react-streaming@0.3.42)(vite@5.3.5):
+  /vike@0.4.182(react-streaming@0.3.43)(vite@5.3.5):
     resolution: {integrity: sha512-1qZzckh5tyvVbZ3cGptieOFcpyfd8avHINGk7R38uEohR/mnW4pRjv9ff6V0sskDu3V8k+ndREK+Hq0hxJPikg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -8264,7 +8264,7 @@ packages:
       es-module-lexer: 1.5.4
       esbuild: 0.19.12
       fast-glob: 3.3.2
-      react-streaming: 0.3.42(react-dom@18.3.1)(react@18.3.1)
+      react-streaming: 0.3.43(react-dom@18.3.1)(react@18.3.1)
       semver: 7.6.3
       sirv: 2.0.4
       source-map-support: 0.5.21
