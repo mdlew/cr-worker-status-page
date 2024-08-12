@@ -36,8 +36,8 @@ dependencies:
     specifier: 0.1.0-next.1
     version: 0.1.0-next.1
   vike:
-    specifier: 0.4.182
-    version: 0.4.182(react-streaming@0.3.43)(vite@5.3.5)
+    specifier: 0.4.184
+    version: 0.4.184(react-streaming@0.3.43)(vite@5.3.5)
   wrangler:
     specifier: ^3.68.0
     version: 3.68.0(@cloudflare/workers-types@4.20240729.0)
@@ -8191,13 +8191,13 @@ packages:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
     dev: true
 
-  /vike@0.4.182(react-streaming@0.3.43)(vite@5.3.5):
-    resolution: {integrity: sha512-1qZzckh5tyvVbZ3cGptieOFcpyfd8avHINGk7R38uEohR/mnW4pRjv9ff6V0sskDu3V8k+ndREK+Hq0hxJPikg==}
+  /vike@0.4.184(react-streaming@0.3.43)(vite@5.3.5):
+    resolution: {integrity: sha512-dgoM3R4onTYm4+vTRl73+W1L1R6ryE8F9AxCCpmWdNh2KMzqMNwuMYH/9vX6AOte48l+TIGAWbcdAkZBAuU41w==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
       react-streaming: '>=0.3.42'
-      vite: '>=4.4.0'
+      vite: '>=5.1.0'
     peerDependenciesMeta:
       react-streaming:
         optional: true
