@@ -71,7 +71,7 @@ export default function Page() {
             }}
             className={cls`
               h-10 rounded-full border px-4 shadow outline-none
-              transition-all focus:border-cyan-400
+              transition-all dark:bg-slate-700 focus:border-cyan-400
             `}
             placeholder='Type "/" to search'
           />
