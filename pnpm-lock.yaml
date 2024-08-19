@@ -16,7 +16,7 @@ dependencies:
     version: 0.26.22(react-dom@18.3.1)(react@18.3.1)
   '@vitejs/plugin-react':
     specifier: ^4.3.1
-    version: 4.3.1(vite@5.3.5)
+    version: 4.3.1(vite@5.4.1)
   node-fetch:
     specifier: ^3.3.2
     version: 3.3.2
@@ -37,7 +37,7 @@ dependencies:
     version: 0.1.0-next.1
   vike:
     specifier: 0.4.187
-    version: 0.4.187(react-streaming@0.3.43)(vite@5.3.5)
+    version: 0.4.187(react-streaming@0.3.43)(vite@5.4.1)
   wrangler:
     specifier: ^3.69.1
     version: 3.69.1(@cloudflare/workers-types@4.20240815.0)
@@ -156,10 +156,10 @@ devDependencies:
     version: 0.18.2
   unplugin-polish-tagged-templates:
     specifier: 0.1.1
-    version: 0.1.1(esbuild@0.17.19)(vite@5.3.5)(vue@3.4.37)
+    version: 0.1.1(esbuild@0.17.19)(vite@5.4.1)(vue@3.4.37)
   vite:
-    specifier: ^5.3.5
-    version: 5.3.5(@types/node@22.4.1)
+    specifier: ^5.4.1
+    version: 5.4.1(@types/node@22.4.1)
   zx:
     specifier: ^8.1.4
     version: 8.1.4
@@ -2143,7 +2143,7 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-react@4.3.1(vite@5.3.5):
+  /@vitejs/plugin-react@4.3.1(vite@5.4.1):
     resolution: {integrity: sha512-m/V2syj5CuVnaxcUJOQRel/Wr31FFXRFlnOoq1TVtkCxsY5veGMTEmpWHndrhB2U8ScHtCQB1e+4hWYExQc6Lg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2154,7 +2154,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.9)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.5(@types/node@22.4.1)
+      vite: 5.4.1(@types/node@22.4.1)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -7878,7 +7878,7 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-polish-tagged-templates@0.1.1(esbuild@0.17.19)(vite@5.3.5)(vue@3.4.37):
+  /unplugin-polish-tagged-templates@0.1.1(esbuild@0.17.19)(vite@5.4.1)(vue@3.4.37):
     resolution: {integrity: sha512-wKTUjzNdeMcJScHgxQm0JkINcylm2rsOtGl/g/8wfy8P+xdEcUjeheLUpjF8qS43zbtXEbWUeBT8JqcBgCKbTQ==}
     peerDependencies:
       '@nuxt/kit': ^3
@@ -7906,7 +7906,7 @@ packages:
       gogocode: 1.0.55(vue@3.4.37)
       pathe: 1.1.2
       unplugin: 1.12.0
-      vite: 5.3.5(@types/node@22.4.1)
+      vite: 5.4.1(@types/node@22.4.1)
     transitivePeerDependencies:
       - vue
     dev: true
@@ -7972,7 +7972,7 @@ packages:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
     dev: true
 
-  /vike@0.4.187(react-streaming@0.3.43)(vite@5.3.5):
+  /vike@0.4.187(react-streaming@0.3.43)(vite@5.4.1):
     resolution: {integrity: sha512-HAwi6Zg6M7/DH7ZM9Ea1UTLcSxuAsE3Qk/+/c+5rWXUENfys5eoL9A1x5x+2MqcFOu5CMVGj5V9OVJE8aW1k5g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -7997,11 +7997,11 @@ packages:
       semver: 7.6.3
       sirv: 2.0.4
       source-map-support: 0.5.21
-      vite: 5.3.5(@types/node@22.4.1)
+      vite: 5.4.1(@types/node@22.4.1)
     dev: false
 
-  /vite@5.3.5(@types/node@22.4.1):
-    resolution: {integrity: sha512-MdjglKR6AQXQb9JGiS7Rc2wC6uMjcm7Go/NHNO63EwiJXfuk9PgqiP/n5IDJCziMkfw9n4Ubp7lttNwz+8ZVKA==}
+  /vite@5.4.1(@types/node@22.4.1):
+    resolution: {integrity: sha512-1oE6yuNXssjrZdblI9AfBbHCC41nnyoVoEZxQnID6yvQZAFBzxxkqoFLtHUMkYunL8hwOLEjgTuxpkRxvba3kA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -8009,6 +8009,7 @@ packages:
       less: '*'
       lightningcss: ^1.21.0
       sass: '*'
+      sass-embedded: '*'
       stylus: '*'
       sugarss: '*'
       terser: ^5.4.0
@@ -8020,6 +8021,8 @@ packages:
       lightningcss:
         optional: true
       sass:
+        optional: true
+      sass-embedded:
         optional: true
       stylus:
         optional: true
