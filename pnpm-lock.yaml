@@ -114,7 +114,7 @@ devDependencies:
     version: 0.4.9(eslint-ts-patch@8.57.0-0)
   eslint-plugin-tailwindcss:
     specifier: ^3.17.4
-    version: 3.17.4(tailwindcss@3.4.9)
+    version: 3.17.4(tailwindcss@3.4.10)
   eslint-ts-patch:
     specifier: ^8.56.0-0
     version: 8.56.0-0
@@ -131,14 +131,14 @@ devDependencies:
     specifier: ^8.4.41
     version: 8.4.41
   tailwindcss:
-    specifier: ^3.4.9
-    version: 3.4.9(ts-node@10.9.2)
+    specifier: ^3.4.10
+    version: 3.4.10(ts-node@10.9.2)
   tailwindcss-animate:
     specifier: ^1.0.7
-    version: 1.0.7(tailwindcss@3.4.9)
+    version: 1.0.7(tailwindcss@3.4.10)
   tailwindcss-plugin-iconify:
     specifier: ^1.4.5
-    version: 1.4.5(tailwindcss@3.4.9)
+    version: 1.4.5(tailwindcss@3.4.10)
   ts-node:
     specifier: ^10.9.2
     version: 10.9.2(@types/node@22.2.0)(typescript@5.5.4)
@@ -1640,7 +1640,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
 
   /@jridgewell/resolve-uri@3.1.1:
@@ -1651,24 +1651,20 @@ packages:
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
 
-  /@jridgewell/sourcemap-codec@1.4.15:
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
-
   /@jridgewell/sourcemap-codec@1.5.0:
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
-    dev: true
 
   /@jridgewell/trace-mapping@0.3.25:
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
 
   /@jridgewell/trace-mapping@0.3.9:
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
 
   /@jsdevtools/ez-spawn@3.0.4:
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
@@ -4274,7 +4270,7 @@ packages:
       scslre: 0.3.0
     dev: true
 
-  /eslint-plugin-tailwindcss@3.17.4(tailwindcss@3.4.9):
+  /eslint-plugin-tailwindcss@3.17.4(tailwindcss@3.4.10):
     resolution: {integrity: sha512-gJAEHmCq2XFfUP/+vwEfEJ9igrPeZFg+skeMtsxquSQdxba9XRk5bn0Bp9jxG1VV9/wwPKi1g3ZjItu6MIjhNg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -4282,7 +4278,7 @@ packages:
     dependencies:
       fast-glob: 3.3.2
       postcss: 8.4.41
-      tailwindcss: 3.4.9(ts-node@10.9.2)
+      tailwindcss: 3.4.10(ts-node@10.9.2)
     dev: true
 
   /eslint-plugin-toml@0.11.1(eslint-ts-patch@8.57.0-0):
@@ -5871,7 +5867,7 @@ packages:
   /magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
     dev: true
 
   /magic-string@0.30.11:
@@ -7762,15 +7758,15 @@ packages:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: false
 
-  /tailwindcss-animate@1.0.7(tailwindcss@3.4.9):
+  /tailwindcss-animate@1.0.7(tailwindcss@3.4.10):
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
-      tailwindcss: 3.4.9(ts-node@10.9.2)
+      tailwindcss: 3.4.10(ts-node@10.9.2)
     dev: true
 
-  /tailwindcss-plugin-iconify@1.4.5(tailwindcss@3.4.9):
+  /tailwindcss-plugin-iconify@1.4.5(tailwindcss@3.4.10):
     resolution: {integrity: sha512-480POcXZf2r5eL5awUIc4qzPcapdA1PsIw5f7DZUEFq81nFhDJyWclzLyU6H0DVZ/pzHQLcSg6hgdSJ9TJxtrg==}
     peerDependencies:
       tailwindcss: '>=3'
@@ -7782,15 +7778,15 @@ packages:
       cross-fetch: 4.0.0
       fs-extra: 11.2.0
       pathe: 1.1.2
-      tailwindcss: 3.4.9(ts-node@10.9.2)
+      tailwindcss: 3.4.10(ts-node@10.9.2)
     transitivePeerDependencies:
       - debug
       - encoding
       - supports-color
     dev: true
 
-  /tailwindcss@3.4.9(ts-node@10.9.2):
-    resolution: {integrity: sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==}
+  /tailwindcss@3.4.10(ts-node@10.9.2):
+    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
