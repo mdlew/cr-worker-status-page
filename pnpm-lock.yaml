@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.3.4
     version: 0.3.4
   '@floating-ui/react':
-    specifier: ^0.26.22
-    version: 0.26.22(react-dom@18.3.1)(react@18.3.1)
+    specifier: ^0.26.23
+    version: 0.26.23(react-dom@18.3.1)(react@18.3.1)
   '@vitejs/plugin-react':
     specifier: ^4.3.1
     version: 4.3.1(vite@5.4.1)
@@ -1302,8 +1302,8 @@ packages:
       react-dom: 18.3.1(react@18.3.1)
     dev: false
 
-  /@floating-ui/react@0.26.22(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-LNv4azPt8SpT4WW7Kku5JNVjLk2GcS0bGGjFTAgqOONRFo9r/aaGHHPpdiIuQbB1t8shmWyWqTTUDmZ9fcNshg==}
+  /@floating-ui/react@0.26.23(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-9u3i62fV0CFF3nIegiWiRDwOs7OW/KhSUJDNx2MkQM3LbE5zQOY01sL3nelcVBXvX7Ovvo3A49I8ql+20Wg/Hw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
