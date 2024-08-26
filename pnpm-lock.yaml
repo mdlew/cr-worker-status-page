@@ -36,8 +36,8 @@ dependencies:
     specifier: 0.1.0-next.1
     version: 0.1.0-next.1
   vike:
-    specifier: 0.4.187
-    version: 0.4.187(react-streaming@0.3.43)(vite@5.4.1)
+    specifier: 0.4.193
+    version: 0.4.193(react-streaming@0.3.43)(vite@5.4.1)
   wrangler:
     specifier: ^3.69.1
     version: 3.69.1(@cloudflare/workers-types@4.20240815.0)
@@ -551,8 +551,8 @@ packages:
     resolution: {integrity: sha512-3I4LRHnVZXoSAsEoni5mosq9l6eiJED58d9V954W4CIZ88AUfYBanWGBGbJG3NztaRTpFHEA6wB3Hn93BmmJdg==}
     dev: false
 
-  /@brillout/vite-plugin-server-entry@0.4.7:
-    resolution: {integrity: sha512-G/wHFx/JdFUA9kPSPDT0nIJH1wmgIwUIY27RL4N6EaHeaXgN4zSCBZTNvvKHyojvMxMw825m4vE0VksHXLyOng==}
+  /@brillout/vite-plugin-server-entry@0.4.12:
+    resolution: {integrity: sha512-d2GPMPFfKEIjajW6wylIL9QsW4Sp/QyY7yr1FDxpgehgcgiXJUjRSvHBt0Ynyb4PtOyeLbhJECVIKwVMU4+BmQ==}
     dependencies:
       '@brillout/import': 0.2.3
     dev: false
@@ -7972,8 +7972,8 @@ packages:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
     dev: true
 
-  /vike@0.4.187(react-streaming@0.3.43)(vite@5.4.1):
-    resolution: {integrity: sha512-HAwi6Zg6M7/DH7ZM9Ea1UTLcSxuAsE3Qk/+/c+5rWXUENfys5eoL9A1x5x+2MqcFOu5CMVGj5V9OVJE8aW1k5g==}
+  /vike@0.4.193(react-streaming@0.3.43)(vite@5.4.1):
+    resolution: {integrity: sha512-nrqSXfocmm10asmoYrczO9iO4aZZ9SNygbpDTn0emmOPUFxROW3MUd8XcuBWJh6QVUTN4KiZYZDZGBMgPfhdbg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -7987,7 +7987,7 @@ packages:
       '@brillout/json-serializer': 0.5.13
       '@brillout/picocolors': 1.0.14
       '@brillout/require-shim': 0.1.2
-      '@brillout/vite-plugin-server-entry': 0.4.7
+      '@brillout/vite-plugin-server-entry': 0.4.12
       acorn: 8.12.1
       cac: 6.7.14
       es-module-lexer: 1.5.4
