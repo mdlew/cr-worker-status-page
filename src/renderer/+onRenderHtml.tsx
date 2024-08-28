@@ -29,7 +29,12 @@ export const onRenderHtml: OnRenderHtmlAsync = async (pageContext) => {
     <html>
       <title>${config.settings.title}</title>
       <head>
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" sizes="any">
+      	<link rel="preconnect" href="https://fonts.googleapis.com">
+	      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
       </head>
       <body>
         <div id="page-view">${stream}</div>
