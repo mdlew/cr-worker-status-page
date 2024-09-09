@@ -68,7 +68,7 @@
     "typescript": "^5.5.4",
     "unplugin-auto-import": "^0.18.2",
     "unplugin-polish-tagged-templates": "0.1.1",
-    "vite": "^5.4.2",
+    "vite": "^5.4.3",
     "zx": "^8.1.5"
   },
   "lint-staged": {
