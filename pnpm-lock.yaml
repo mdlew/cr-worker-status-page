@@ -39,8 +39,8 @@ dependencies:
     specifier: 0.4.195
     version: 0.4.195(react-streaming@0.3.43)(vite@5.4.5)
   wrangler:
-    specifier: ^3.75.0
-    version: 3.75.0(@cloudflare/workers-types@4.20240903.0)
+    specifier: ^3.76.0
+    version: 3.76.0(@cloudflare/workers-types@4.20240903.0)
 
 devDependencies:
   '@antfu/eslint-config':
@@ -2438,7 +2438,7 @@ packages:
       '@vue/shared': 3.4.38
       entities: 4.5.0
       estree-walker: 2.0.2
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
     dev: true
 
   /@vue/compiler-dom@3.0.11:
@@ -2465,8 +2465,8 @@ packages:
       '@vue/shared': 3.4.38
       estree-walker: 2.0.2
       magic-string: 0.30.11
-      postcss: 8.4.45
-      source-map-js: 1.2.0
+      postcss: 8.4.47
+      source-map-js: 1.2.1
     dev: true
 
   /@vue/compiler-ssr@3.0.11:
@@ -5999,8 +5999,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /miniflare@3.20240821.1:
-    resolution: {integrity: sha512-81qdiryDG7VXzZuoa0EwhkaIYYrn7+StRIrd/2i7SPqPUNICUBjbhFFKqTnvE1+fqIPPB6l8ShKFaFvmnZOASg==}
+  /miniflare@3.20240821.2:
+    resolution: {integrity: sha512-mgWekp437zD5l2Rz/in/OGBAISNB3rWr69DhR5Iq3WoToUNeAnkbW/CWPBpJiw5WHzZfHHOT+sVjSksAGRJitg==}
     engines: {node: '>=16.13'}
     hasBin: true
     dependencies:
@@ -6733,15 +6733,6 @@ packages:
       nanoid: 3.3.7
       source-map: 0.6.1
       vfile-location: 3.2.0
-    dev: true
-
-  /postcss@8.4.45:
-    resolution: {integrity: sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1Q==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
     dev: true
 
   /postcss@8.4.47:
@@ -8544,8 +8535,8 @@ packages:
       '@cloudflare/workerd-windows-64': 1.20240821.1
     dev: false
 
-  /wrangler@3.75.0(@cloudflare/workers-types@4.20240903.0):
-    resolution: {integrity: sha512-CitNuNj0O1z6qbonUXmpUbxeWpU3nx28Kc4ZT33tMdeooQssb063Ie7+ZCdfS3kPhRHSwGdtOV22xFYytHON8w==}
+  /wrangler@3.76.0(@cloudflare/workers-types@4.20240903.0):
+    resolution: {integrity: sha512-HQWJm5/RUHVr+Vg2KM55pjDSbcEh5WxR6Swcpz1jQ5o+ytoLoj31IHMsl4cJFfM/JtzjBXSpRbS00lDnGfFc2A==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -8563,7 +8554,7 @@ packages:
       chokidar: 3.6.0
       date-fns: 3.6.0
       esbuild: 0.17.19
-      miniflare: 3.20240821.1
+      miniflare: 3.20240821.2
       nanoid: 3.3.7
       path-to-regexp: 6.2.1
       resolve: 1.22.8
