@@ -39,7 +39,7 @@
     "@iconify-json/svg-spinners": "^1.2.0",
     "@jannajs/lint": "3.0.0-next.4",
     "@types/compression": "^1.7.5",
-    "@types/express": "^4.17.21",
+    "@types/express": "^5.0.0",
     "@types/node": "^22.5.5",
     "@types/node-fetch": "^2.6.11",
     "@types/papaparse": "^5.3.14",
