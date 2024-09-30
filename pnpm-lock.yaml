@@ -33,8 +33,8 @@ dependencies:
     specifier: ^0.3.43
     version: 0.3.43(react-dom@18.3.1)(react@18.3.1)
   tagged-classnames-free:
-    specifier: 0.1.0-next.1
-    version: 0.1.0-next.1
+    specifier: 0.1.1
+    version: 0.1.1(clsx@2.1.0)(tailwind-merge@1.14.0)
   vike:
     specifier: 0.4.197
     version: 0.4.197(react-streaming@0.3.43)(vite@5.4.7)
@@ -7621,8 +7621,11 @@ packages:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
     dev: false
 
-  /tagged-classnames-free@0.1.0-next.1:
-    resolution: {integrity: sha512-00VFvjPRfGMrdqqlkPzHGo13miCxm+zKAYqDRUiYoyNk1VhOe2J2cMv8xOnXASJV6qVWE5Fmkw5ocHg9xoc0qg==}
+  /tagged-classnames-free@0.1.1(clsx@2.1.0)(tailwind-merge@1.14.0):
+    resolution: {integrity: sha512-s8RR8yiKDrxsZZAwcnxVm/Tfn+a4BkerDbpEwD5HECv5jLaBPTJHOUmv6YsiziOlst/gaXRzKc2ZOaxBM5Pz5w==}
+    peerDependencies:
+      clsx: '*'
+      tailwind-merge: '*'
     dependencies:
       clsx: 2.1.0
       tailwind-merge: 1.14.0
