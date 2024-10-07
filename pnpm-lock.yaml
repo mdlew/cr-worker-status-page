@@ -16,7 +16,7 @@ dependencies:
     version: 0.26.24(react-dom@18.3.1)(react@18.3.1)
   '@vitejs/plugin-react':
     specifier: ^4.3.2
-    version: 4.3.2(vite@5.4.7)
+    version: 4.3.2(vite@5.4.8)
   node-fetch:
     specifier: ^3.3.2
     version: 3.3.2
@@ -37,7 +37,7 @@ dependencies:
     version: 0.1.1(clsx@2.1.0)(tailwind-merge@1.14.0)
   vike:
     specifier: 0.4.198
-    version: 0.4.198(react-streaming@0.3.43)(vite@5.4.7)
+    version: 0.4.198(react-streaming@0.3.43)(vite@5.4.8)
   wrangler:
     specifier: ^3.78.9
     version: 3.78.9(@cloudflare/workers-types@4.20241004.0)
@@ -156,10 +156,10 @@ devDependencies:
     version: 0.18.3
   unplugin-polish-tagged-templates:
     specifier: 0.2.1
-    version: 0.2.1(esbuild@0.17.19)(vite@5.4.7)(vue@3.5.8)
+    version: 0.2.1(esbuild@0.17.19)(vite@5.4.8)(vue@3.5.8)
   vite:
-    specifier: ^5.4.7
-    version: 5.4.7(@types/node@22.7.4)
+    specifier: ^5.4.8
+    version: 5.4.8(@types/node@22.7.4)
   zx:
     specifier: ^8.1.9
     version: 8.1.9
@@ -2355,7 +2355,7 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-react@4.3.2(vite@5.4.7):
+  /@vitejs/plugin-react@4.3.2(vite@5.4.8):
     resolution: {integrity: sha512-hieu+o05v4glEBucTcKMK3dlES0OeJlD9YVOAPraVMOInBCwzumaIFiUjr4bHK7NPgnAHgiskUoceKercrN8vg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2366,7 +2366,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.25.2)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.4.7(@types/node@22.7.4)
+      vite: 5.4.8(@types/node@22.7.4)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -8058,7 +8058,7 @@ packages:
       - webpack-sources
     dev: true
 
-  /unplugin-polish-tagged-templates@0.2.1(esbuild@0.17.19)(vite@5.4.7)(vue@3.5.8):
+  /unplugin-polish-tagged-templates@0.2.1(esbuild@0.17.19)(vite@5.4.8)(vue@3.5.8):
     resolution: {integrity: sha512-nYuDqwfu8MAU0jG3cRsOrMkmeJUEe/HF1vhvNQrZkU2gTtptFvpNrThEVF+Mx99JPYweXLlKeuifiH1GjBg+8Q==}
     peerDependencies:
       '@nuxt/kit': ^3
@@ -8088,7 +8088,7 @@ packages:
       magic-string: 0.30.11
       pathe: 1.1.2
       unplugin: 1.14.1
-      vite: 5.4.7(@types/node@22.7.4)
+      vite: 5.4.8(@types/node@22.7.4)
     transitivePeerDependencies:
       - vue
       - webpack-sources
@@ -8158,7 +8158,7 @@ packages:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
     dev: true
 
-  /vike@0.4.198(react-streaming@0.3.43)(vite@5.4.7):
+  /vike@0.4.198(react-streaming@0.3.43)(vite@5.4.8):
     resolution: {integrity: sha512-+81aEkVL9Ruroxl5X1UcYAoGX0yiPx+8b9tgvuGbyNduvufF6FLDFxxRqd1G0+eaofit6xsbChG9uid4plMpog==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -8183,11 +8183,11 @@ packages:
       semver: 7.6.3
       sirv: 2.0.4
       source-map-support: 0.5.21
-      vite: 5.4.7(@types/node@22.7.4)
+      vite: 5.4.8(@types/node@22.7.4)
     dev: false
 
-  /vite@5.4.7(@types/node@22.7.4):
-    resolution: {integrity: sha512-5l2zxqMEPVENgvzTuBpHer2awaetimj2BGkhBPdnwKbPNOlHsODU+oiazEZzLK7KhAnOrO+XGYJYn4ZlUhDtDQ==}
+  /vite@5.4.8(@types/node@22.7.4):
+    resolution: {integrity: sha512-FqrItQ4DT1NC4zCUqMB4c4AZORMKIa0m8/URVCZ77OZ/QSNeJ54bU1vrFADbDsuwfIPcgknRkmqakQcgnL4GiQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
