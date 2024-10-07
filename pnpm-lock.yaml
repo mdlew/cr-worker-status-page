@@ -161,8 +161,8 @@ devDependencies:
     specifier: ^5.4.7
     version: 5.4.7(@types/node@22.5.5)
   zx:
-    specifier: ^8.1.8
-    version: 8.1.8
+    specifier: ^8.1.9
+    version: 8.1.9
 
 packages:
 
@@ -8594,8 +8594,8 @@ packages:
       yaml: 2.5.0
     dev: true
 
-  /zx@8.1.8:
-    resolution: {integrity: sha512-m8s48skYQ8EcRz9KXfc7rZCjqlZevOGiNxq5tNhDiGnhOvXKRGxVr+ajUma9B6zxMdHGSSbnjV/R/r7Ue2xd+A==}
+  /zx@8.1.9:
+    resolution: {integrity: sha512-UHuLHphHmsBYKkAchkSrEN4nzDyagafqC9HUxtc1J7eopaScW6H9dsLJ1lmkAntnLtDTGoM8fa+jrJrXiIfKFA==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
     optionalDependencies:
