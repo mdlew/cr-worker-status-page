@@ -36,8 +36,8 @@ dependencies:
     specifier: 0.1.1
     version: 0.1.1(clsx@2.1.0)(tailwind-merge@1.14.0)
   vike:
-    specifier: 0.4.197
-    version: 0.4.197(react-streaming@0.3.43)(vite@5.4.7)
+    specifier: 0.4.198
+    version: 0.4.198(react-streaming@0.3.43)(vite@5.4.7)
   wrangler:
     specifier: ^3.78.9
     version: 3.78.9(@cloudflare/workers-types@4.20240925.0)
@@ -8158,8 +8158,8 @@ packages:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
     dev: true
 
-  /vike@0.4.197(react-streaming@0.3.43)(vite@5.4.7):
-    resolution: {integrity: sha512-WPQjnMRx9moxukRx2yV0+PayQLDAv7JG4s11+d/xXvM2Y1WqNKNCXSTKbqMdIGae24GkK9lWyHzuFSPVFzb4sw==}
+  /vike@0.4.198(react-streaming@0.3.43)(vite@5.4.7):
+    resolution: {integrity: sha512-+81aEkVL9Ruroxl5X1UcYAoGX0yiPx+8b9tgvuGbyNduvufF6FLDFxxRqd1G0+eaofit6xsbChG9uid4plMpog==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
