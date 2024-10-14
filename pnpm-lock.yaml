@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^18.4.4
     version: 18.6.1
   '@iconify-json/ic':
-    specifier: ^1.2.0
-    version: 1.2.0
+    specifier: ^1.2.1
+    version: 1.2.1
   '@iconify-json/svg-spinners':
     specifier: ^1.2.0
     version: 1.2.0
@@ -1485,8 +1485,8 @@ packages:
     deprecated: Use @eslint/object-schema instead
     dev: true
 
-  /@iconify-json/ic@1.2.0:
-    resolution: {integrity: sha512-L4+m77xTQB08X3I+3xs1+IrvK+aNcuN/7ODu5aUPznHKLU+/8UYcsjUgNHze6vPOGPQ0AG+kCwvy91EYPXSRxw==}
+  /@iconify-json/ic@1.2.1:
+    resolution: {integrity: sha512-UjL/bjJP/T5EV881+hTzcfTKVo0KEUjhnMiJcLtPzNgPtU2KZZmRx8BSKKR61H4CN/5FTEbyawGyG0aEt3SwGQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
