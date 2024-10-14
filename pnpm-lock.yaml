@@ -113,8 +113,8 @@ devDependencies:
     specifier: ^0.4.12
     version: 0.4.12(eslint-ts-patch@8.57.0-0)
   eslint-plugin-tailwindcss:
-    specifier: ^3.17.4
-    version: 3.17.4(tailwindcss@3.4.13)
+    specifier: ^3.17.5
+    version: 3.17.5(tailwindcss@3.4.13)
   eslint-ts-patch:
     specifier: ^8.56.0-0
     version: 8.56.0-0
@@ -4171,8 +4171,8 @@ packages:
       scslre: 0.3.0
     dev: true
 
-  /eslint-plugin-tailwindcss@3.17.4(tailwindcss@3.4.13):
-    resolution: {integrity: sha512-gJAEHmCq2XFfUP/+vwEfEJ9igrPeZFg+skeMtsxquSQdxba9XRk5bn0Bp9jxG1VV9/wwPKi1g3ZjItu6MIjhNg==}
+  /eslint-plugin-tailwindcss@3.17.5(tailwindcss@3.4.13):
+    resolution: {integrity: sha512-8Mi7p7dm+mO1dHgRHHFdPu4RDTBk69Cn4P0B40vRQR+MrguUpwmKwhZy1kqYe3Km8/4nb+cyrCF+5SodOEmaow==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       tailwindcss: ^3.4.0
