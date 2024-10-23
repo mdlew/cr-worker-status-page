@@ -95,7 +95,7 @@ importers:
         version: 18.2.19
       autoprefixer:
         specifier: ^10.4.18
-        version: 10.4.18(postcss@8.4.36)
+        version: 10.4.18(postcss@8.4.37)
       compression:
         specifier: ^1.7.4
         version: 1.7.4
@@ -127,8 +127,8 @@ importers:
         specifier: ^15.2.9
         version: 15.2.9
       postcss:
-        specifier: ^8.4.36
-        version: 8.4.36
+        specifier: ^8.4.37
+        version: 8.4.37
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.1(ts-node@10.9.2(@types/node@20.11.25)(typescript@5.3.3))
@@ -3638,12 +3638,8 @@ packages:
     resolution: {integrity: sha512-iBXEV5VTTYaRRdxiFYzTtuv2lGMQBExqkZKSzkJe+Fl6rvQrA/49UVGKqB+LG54hpW/TtDBMGds8j33GFNW7pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.4.36:
-    resolution: {integrity: sha512-/n7eumA6ZjFHAsbX30yhHup/IMkOmlmvtEi7P+6RMYf+bGJSUHc3geH4a0NSZxAz/RJfiS9tooCTs9LAVYUZKw==}
-    engines: {node: ^10 || ^12 || >=14}
-
-  postcss@8.4.45:
-    resolution: {integrity: sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1Q==}
+  postcss@8.4.37:
+    resolution: {integrity: sha512-7iB/v/r7Woof0glKLH8b1SPHrsX7uhdO+Geb41QpF/+mWZHU3uxxSlN+UXGVit1PawOYDToO+AbZzhBzWRDwbQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.4.47:
@@ -3949,10 +3945,6 @@ packages:
   smpltmpl@1.0.2:
     resolution: {integrity: sha512-Hq23NNgeZigOzIiX1dkb6W3gFn2/XQj43KhPxu65IMieG/gIwf/lQb1IudjYv0c/5LwJeS/mPayYzyo+8WJMxQ==}
     engines: {node: '>=4'}
-
-  source-map-js@1.2.0:
-    resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
-    engines: {node: '>=0.10.0'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -4658,7 +4650,7 @@ snapshots:
   '@babel/code-frame@7.24.7':
     dependencies:
       '@babel/highlight': 7.24.7
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   '@babel/compat-data@7.25.4': {}
 
@@ -4751,7 +4743,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       chalk: 2.4.2
       js-tokens: 4.0.0
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   '@babel/parser@7.23.9':
     dependencies:
@@ -4824,13 +4816,13 @@ snapshots:
 
   '@clack/core@0.3.4':
     dependencies:
-      picocolors: 1.0.1
+      picocolors: 1.1.1
       sisteransi: 1.0.5
 
   '@clack/prompts@0.7.0':
     dependencies:
       '@clack/core': 0.3.4
-      picocolors: 1.0.1
+      picocolors: 1.1.1
       sisteransi: 1.0.5
 
   '@cloudflare/kv-asset-handler@0.3.4':
@@ -6072,14 +6064,14 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  autoprefixer@10.4.18(postcss@8.4.36):
+  autoprefixer@10.4.18(postcss@8.4.37):
     dependencies:
       browserslist: 4.23.0
       caniuse-lite: 1.0.30001596
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.36
+      postcss: 8.4.37
       postcss-value-parser: 4.2.0
 
   babel-code-frame@6.26.0:
@@ -6420,12 +6412,12 @@ snapshots:
   css-tree@2.2.1:
     dependencies:
       mdn-data: 2.0.28
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   css-tree@2.3.1:
     dependencies:
       mdn-data: 2.0.30
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   css-what@6.1.0: {}
 
@@ -6953,7 +6945,7 @@ snapshots:
   eslint-plugin-tailwindcss@3.14.3(tailwindcss@3.4.1(ts-node@10.9.2(@types/node@20.11.25)(typescript@5.3.3))):
     dependencies:
       fast-glob: 3.3.2
-      postcss: 8.4.36
+      postcss: 8.4.37
       tailwindcss: 3.4.1(ts-node@10.9.2(@types/node@20.11.25)(typescript@5.3.3))
 
   eslint-plugin-toml@0.11.1(eslint@9.9.1(jiti@1.21.0)):
@@ -8181,24 +8173,24 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-import@15.1.0(postcss@8.4.36):
+  postcss-import@15.1.0(postcss@8.4.37):
     dependencies:
-      postcss: 8.4.36
+      postcss: 8.4.37
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-js@4.0.1(postcss@8.4.36):
+  postcss-js@4.0.1(postcss@8.4.37):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.36
+      postcss: 8.4.37
 
-  postcss-load-config@4.0.2(postcss@8.4.36)(ts-node@10.9.2(@types/node@20.11.25)(typescript@5.3.3)):
+  postcss-load-config@4.0.2(postcss@8.4.37)(ts-node@10.9.2(@types/node@20.11.25)(typescript@5.3.3)):
     dependencies:
       lilconfig: 3.0.0
       yaml: 2.4.0
     optionalDependencies:
-      postcss: 8.4.36
+      postcss: 8.4.37
       ts-node: 10.9.2(@types/node@20.11.25)(typescript@5.3.3)
 
   postcss-modules-extract-imports@3.0.0(postcss@8.1.10):
@@ -8234,9 +8226,9 @@ snapshots:
       postcss-modules-values: 4.0.0(postcss@8.1.10)
       string-hash: 1.1.3
 
-  postcss-nested@6.0.1(postcss@8.4.36):
+  postcss-nested@6.0.1(postcss@8.4.37):
     dependencies:
-      postcss: 8.4.36
+      postcss: 8.4.37
       postcss-selector-parser: 6.0.15
 
   postcss-selector-parser@6.0.15:
@@ -8260,17 +8252,11 @@ snapshots:
       source-map: 0.6.1
       vfile-location: 3.2.0
 
-  postcss@8.4.36:
+  postcss@8.4.37:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
-
-  postcss@8.4.45:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
 
   postcss@8.4.47:
     dependencies:
@@ -8623,8 +8609,6 @@ snapshots:
     dependencies:
       babel-code-frame: 6.26.0
 
-  source-map-js@1.2.0: {}
-
   source-map-js@1.2.1: {}
 
   source-map-support@0.5.21:
@@ -8761,7 +8745,7 @@ snapshots:
       css-select: 5.1.0
       css-tree: 2.3.1
       csso: 5.0.5
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   synckit@0.6.2:
     dependencies:
@@ -8815,11 +8799,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.36
-      postcss-import: 15.1.0(postcss@8.4.36)
-      postcss-js: 4.0.1(postcss@8.4.36)
-      postcss-load-config: 4.0.2(postcss@8.4.36)(ts-node@10.9.2(@types/node@20.11.25)(typescript@5.3.3))
-      postcss-nested: 6.0.1(postcss@8.4.36)
+      postcss: 8.4.37
+      postcss-import: 15.1.0(postcss@8.4.37)
+      postcss-js: 4.0.1(postcss@8.4.37)
+      postcss-load-config: 4.0.2(postcss@8.4.37)(ts-node@10.9.2(@types/node@20.11.25)(typescript@5.3.3))
+      postcss-nested: 6.0.1(postcss@8.4.37)
       postcss-selector-parser: 6.0.15
       resolve: 1.22.8
       sucrase: 3.35.0
@@ -9013,13 +8997,13 @@ snapshots:
     dependencies:
       browserslist: 4.23.0
       escalade: 3.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   update-browserslist-db@1.1.0(browserslist@4.23.3):
     dependencies:
       browserslist: 4.23.3
       escalade: 3.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   uri-js@4.4.1:
     dependencies:
@@ -9066,7 +9050,7 @@ snapshots:
   vite@5.4.6(@types/node@20.11.25):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.45
+      postcss: 8.4.47
       rollup: 4.24.0
     optionalDependencies:
       '@types/node': 20.11.25
