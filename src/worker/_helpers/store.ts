@@ -4,12 +4,10 @@ import type { Monitor } from '#src/types'
 
 import { config } from '#src/config'
 import { aMiB, memorySizeOf } from '#src/helpers/memory'
-import getRemoteMonitors from '#src/helpers/monitors'
 import { ensureWorkerEnv } from '#src/worker/_helpers'
 
-export const WORKER_SUBREQUESTS_LIMIT = 50
-
 export const DATA_KEY = 'data-v1'
+export const REMOTE_MONITORS_KEY = 'remote-monitors-v1'
 
 export interface MonitorLastCheck {
   /** Timestamp(ms) */
@@ -66,14 +64,23 @@ export interface DataV1 {
   lastUpdate?: DataV1LastCheck
 }
 
-export async function upsertKvStore(value: DataV1 | null, allMonitors: Monitor[]) {
+export async function upsertRemoteMonitors(env: Env, value: Monitor[] | null) {
   ensureWorkerEnv()
   if (value === null) {
-    await KV_STORE.delete(DATA_KEY)
+    await env.KV_STORE.delete(REMOTE_MONITORS_KEY)
+    return
+  }
+  await env.KV_STORE.put(REMOTE_MONITORS_KEY, JSON.stringify(value))
+}
+
+export async function upsertData(env: Env, value: DataV1 | null, allMonitors: Monitor[]) {
+  ensureWorkerEnv()
+  if (value === null) {
+    await env.KV_STORE.delete(DATA_KEY)
     return
   }
   const cleanedValue = await cleanDataV1(value, allMonitors)
-  await KV_STORE.put(DATA_KEY, JSON.stringify(cleanedValue))
+  await env.KV_STORE.put(DATA_KEY, JSON.stringify(cleanedValue))
 }
 
 export async function cleanDataV1(value: DataV1, allMonitors: Monitor[]) {
@@ -114,34 +121,34 @@ export async function cleanDataV1(value: DataV1, allMonitors: Monitor[]) {
   }
 }
 
-async function getStore() {
+async function getStore(env: Env) {
   ensureWorkerEnv()
   // https://developers.cloudflare.com/kv/api/read-key-value-pairs/
-  let kvData = await KV_STORE.get<DataV1>(DATA_KEY, 'json')
+  let kvData = await env.KV_STORE.get<DataV1>(DATA_KEY, 'json')
   if (!kvData) {
     kvData = {}
   }
   return { kvData }
 }
 
-export async function getAllMonitors(useRemoteMonitors = true) {
+export async function getAllMonitors(env: Env, useRemoteMonitors = true) {
   if (useRemoteMonitors) {
-    const remoteMonitors = await getRemoteMonitors()
-    return [...config.monitors, ...remoteMonitors]
+    const remoteMonitors = await env.KV_STORE.get<Monitor[]>(REMOTE_MONITORS_KEY, 'json')
+    return [...config.monitors, ...(remoteMonitors || [])]
   }
   return config.monitors
 }
 
-export async function getCoreData(useRemoteMonitors?: boolean) {
-  const [allMonitors, { kvData }] = await Promise.all([getAllMonitors(useRemoteMonitors), getStore()])
+export async function getCoreData(env: Env, useRemoteMonitors?: boolean) {
+  const [allMonitors, { kvData }] = await Promise.all([getAllMonitors(env, useRemoteMonitors), getStore(env)])
   return {
     allMonitors,
     kvData,
   }
 }
 
-export async function prepareData() {
-  const { allMonitors, kvData } = await getCoreData()
+export async function prepareData(env: Env) {
+  const { allMonitors, kvData } = await getCoreData(env)
 
   const lastCheckedMonitorIds = kvData.lastUpdate?.checks.ids || []
   const uncheckMonitors = lastCheckedMonitorIds.length === 0

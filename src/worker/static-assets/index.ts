@@ -3,8 +3,14 @@
 // ********************************************
 
 import { getAssetFromKV } from '@cloudflare/kv-asset-handler'
+// eslint-disable-next-line ts/ban-ts-comment
+// @ts-expect-error
+import manifestJSON from '__STATIC_CONTENT_MANIFEST'
 
 import type { Options } from '@cloudflare/kv-asset-handler'
+import type { FetchHandler } from '#src/types'
+
+const assetManifest = JSON.parse(manifestJSON)
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -15,8 +21,13 @@ import type { Options } from '@cloudflare/kv-asset-handler'
  */
 const DEBUG = false
 
-export async function handleStaticAssets(event: FetchEvent) {
-  const options: Partial<Options> = {}
+export const handleStaticAssets: FetchHandler = async (request, env, ctx) => {
+  const options: Partial<Options> = {
+    // eslint-disable-next-line ts/ban-ts-comment
+    // @ts-expect-error
+    ASSET_NAMESPACE: env.__STATIC_CONTENT,
+    ASSET_MANIFEST: assetManifest,
+  }
 
   /**
    * You can add custom logic to how we fetch your assets
@@ -31,7 +42,12 @@ export async function handleStaticAssets(event: FetchEvent) {
         bypassCache: true,
       }
     }
-    const page = await getAssetFromKV(event, options)
+    const page = await getAssetFromKV({
+      request,
+      waitUntil(promise) {
+        return ctx.waitUntil(promise)
+      },
+    }, options)
 
     // allow headers to be altered
     const response = new Response(page.body, page)
@@ -43,12 +59,16 @@ export async function handleStaticAssets(event: FetchEvent) {
     response.headers.set('Feature-Policy', 'none')
 
     return response
-  }
-  catch (e) {
+  } catch (e) {
     // if an error is thrown try to serve the asset at 404.html
     if (!DEBUG) {
       try {
-        const notFoundResponse = await getAssetFromKV(event, {
+        const notFoundResponse = await getAssetFromKV({
+          request,
+          waitUntil(promise) {
+            return ctx.waitUntil(promise)
+          },
+        }, {
           mapRequestToAsset: (req) => new Request(`${new URL(req.url).origin}/404.html`, req),
         })
 
@@ -56,8 +76,7 @@ export async function handleStaticAssets(event: FetchEvent) {
           ...notFoundResponse,
           status: 404,
         })
-      }
-      catch (e) {}
+      } catch (e) {}
     }
 
     if (e instanceof Error) {

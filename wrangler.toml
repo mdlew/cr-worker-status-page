@@ -17,5 +17,11 @@ port = 3000
 kv_namespaces = [ { binding = "KV_STORE", id = "515d8c2959304604a5bd3f0df246aafa" } ]
 
 [env.production.triggers]
-# https://crontab.guru/#*/30_*_*_*_*
-crons = ["*/30 * * * *"]
+crons = [
+  # https://crontab.guru/#*/2_*_*_*_*
+  # Check monitors
+  "*/30 * * * *",
+  # https://crontab.guru/#*/10_*_*_*_*
+  # Update remote csv monitors
+  "*/10 * * * *",
+]
