@@ -39,11 +39,11 @@ const handler: ExportedHandler<Env> = {
 //    switch (controller.cron) {
 //      case '*/2 * * * *':
         // Every two minutes
-//        await handleCronTrigger(env, ctx)
+        await handleCronTrigger(env, ctx)
 //        break
 //      case '*/10 * * * *':
         // Every ten minutes
-        await handleRemoteMonitors(env)
+//        await handleRemoteMonitors(env)
  //       break
 //    }
   },
