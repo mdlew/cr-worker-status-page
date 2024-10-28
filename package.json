@@ -20,7 +20,7 @@
     "@cloudflare/kv-asset-handler": "^0.3.4",
     "@floating-ui/react": "^0.26.23",
     "@vitejs/plugin-react": "^4.3.1",
-    "node-fetch": "^2.6.9",
+    "node-fetch": "^3.3.2",
     "papaparse": "^5.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
