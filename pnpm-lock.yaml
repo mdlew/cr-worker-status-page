@@ -39,8 +39,8 @@ importers:
         specifier: 0.1.0-next.1
         version: 0.1.0-next.1
       vike:
-        specifier: 0.4.195
-        version: 0.4.195(react-streaming@0.3.43(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(vite@5.4.6(@types/node@20.11.25))
+        specifier: 0.4.200
+        version: 0.4.200(react-streaming@0.3.43(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(vite@5.4.6(@types/node@20.11.25))
       wrangler:
         specifier: ^3.75.0
         version: 3.75.0(@cloudflare/workers-types@4.20241022.0)
@@ -344,11 +344,14 @@ packages:
   '@brillout/picocolors@1.0.14':
     resolution: {integrity: sha512-XhyZY3/FUh56mDuLIjv5kN9qy+oQj7A/d2uQ6cJJ4uVv55+velua3abcrM5WIvs2RHZGA3EE7S9FWo+TjF10ew==}
 
+  '@brillout/picocolors@1.0.15':
+    resolution: {integrity: sha512-VrgvPtfnKP/i8kxCAyQVd0DWg6xU8OZJndbLf/lrywd96UdMhnGL/PK42HhHhhwkDSkaiQU+zc+OPWpvqOe4Cg==}
+
   '@brillout/require-shim@0.1.2':
     resolution: {integrity: sha512-3I4LRHnVZXoSAsEoni5mosq9l6eiJED58d9V954W4CIZ88AUfYBanWGBGbJG3NztaRTpFHEA6wB3Hn93BmmJdg==}
 
-  '@brillout/vite-plugin-server-entry@0.4.12':
-    resolution: {integrity: sha512-d2GPMPFfKEIjajW6wylIL9QsW4Sp/QyY7yr1FDxpgehgcgiXJUjRSvHBt0Ynyb4PtOyeLbhJECVIKwVMU4+BmQ==}
+  '@brillout/vite-plugin-server-entry@0.5.1':
+    resolution: {integrity: sha512-ZoXt8D/Z1E6e8ylKm5z8VzuxtIqPfLoWvsKkeK08LIpfCnRMxRJQLBZ1i3s9gGxE5+PvzY2dU5pBr7dL9aM8bg==}
 
   '@clack/core@0.3.4':
     resolution: {integrity: sha512-H4hxZDXgHtWTwV3RAVenqcC4VbJZNegbBjlPvzOzCouXtS2y3sDvlO3IsbrPNWuLWPPlYVYPghQdSF64683Ldw==}
@@ -1100,9 +1103,6 @@ packages:
   '@pkgr/core@0.1.1':
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
-  '@polka/url@1.0.0-next.24':
-    resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
 
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
@@ -3260,10 +3260,6 @@ packages:
     resolution: {integrity: sha512-ZuJBEatzjyvA6+5Ogl02QbV70UNbe2jaxa29NzcL3g5VT7rHAMtE0v+vGOZkcmdl3ZtUDEq0BMj4qXgw8uSCXg==}
     engines: {node: '>=10.13'}
 
-  mrmime@2.0.0:
-    resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==}
-    engines: {node: '>=10'}
-
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
@@ -3884,10 +3880,6 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  sirv@2.0.4:
-    resolution: {integrity: sha512-94Bdh3cC2PKrbgSOUqTiGPWVZeSiXfKOVZNJniWoqrWrRkB1CJzBU3NEbiTsPcYy1lDsANA/THzS+9WBiy5nfQ==}
-    engines: {node: '>= 10'}
-
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
@@ -4131,10 +4123,6 @@ packages:
     resolution: {integrity: sha512-khrZo4buq4qVmsGzS5yQjKe/WsFvV8fGfOjDQN0q4iy9FjRfPWRgTFrU8u1R2iu/SfWLhY9WnCi4Jhdrcbtg+g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  totalist@3.0.1:
-    resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
-    engines: {node: '>=6'}
-
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
@@ -4318,8 +4306,8 @@ packages:
   vfile-location@3.2.0:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
 
-  vike@0.4.195:
-    resolution: {integrity: sha512-I8ltb12bSz6aU2Rf+lEzvVVvcKedTav+cnGYTsposfzg5GIVc9YPeUBV8zgg93jUosxgIG0UExMh7EGuR3gQeg==}
+  vike@0.4.200:
+    resolution: {integrity: sha512-tmYs6mbnkbyxAFUrjCoKLStNq2QIJyais9FIUHME73tGBEF8/fqmj/EKpCu0KNMkcRlQ4shsd+A/cNFfWaFTvA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -4741,9 +4729,11 @@ snapshots:
 
   '@brillout/picocolors@1.0.14': {}
 
+  '@brillout/picocolors@1.0.15': {}
+
   '@brillout/require-shim@0.1.2': {}
 
-  '@brillout/vite-plugin-server-entry@0.4.12':
+  '@brillout/vite-plugin-server-entry@0.5.1':
     dependencies:
       '@brillout/import': 0.2.3
 
@@ -5434,8 +5424,6 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.1.1': {}
-
-  '@polka/url@1.0.0-next.24': {}
 
   '@rollup/pluginutils@5.1.0':
     dependencies:
@@ -7874,8 +7862,6 @@ snapshots:
       webpack-merge: 4.2.2
       yaml: 2.4.0
 
-  mrmime@2.0.0: {}
-
   ms@2.0.0: {}
 
   ms@2.1.2: {}
@@ -8513,12 +8499,6 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  sirv@2.0.4:
-    dependencies:
-      '@polka/url': 1.0.0-next.24
-      mrmime: 2.0.0
-      totalist: 3.0.1
-
   sisteransi@1.0.5: {}
 
   slash@3.0.0: {}
@@ -8779,8 +8759,6 @@ snapshots:
     dependencies:
       eslint-visitor-keys: 3.4.3
 
-  totalist@3.0.1: {}
-
   tr46@0.0.3: {}
 
   ts-api-utils@1.3.0(typescript@5.3.3):
@@ -8952,20 +8930,19 @@ snapshots:
 
   vfile-location@3.2.0: {}
 
-  vike@0.4.195(react-streaming@0.3.43(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(vite@5.4.6(@types/node@20.11.25)):
+  vike@0.4.200(react-streaming@0.3.43(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(vite@5.4.6(@types/node@20.11.25)):
     dependencies:
       '@brillout/import': 0.2.3
       '@brillout/json-serializer': 0.5.13
-      '@brillout/picocolors': 1.0.14
+      '@brillout/picocolors': 1.0.15
       '@brillout/require-shim': 0.1.2
-      '@brillout/vite-plugin-server-entry': 0.4.12
+      '@brillout/vite-plugin-server-entry': 0.5.1
       acorn: 8.12.1
       cac: 6.7.14
       es-module-lexer: 1.5.4
-      esbuild: 0.19.12
+      esbuild: 0.21.5
       fast-glob: 3.3.2
       semver: 7.6.3
-      sirv: 2.0.4
       source-map-support: 0.5.21
       vite: 5.4.6(@types/node@20.11.25)
     optionalDependencies:
