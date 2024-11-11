@@ -1,6 +1,8 @@
 # Cloudflare Worker - Status Page Pro
 
-Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://cf-worker-status-page-pro-production.yunsii.workers.dev/) out! 🚀
+Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status.lewlab.com/) out! 🚀
+
+![Deploy status](https://github.com/mdlew/cf-workers-status-page-typescript/actions/workflows/publish.yml/badge.svg)
 
 ## Features
 
