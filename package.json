@@ -57,7 +57,7 @@
     "express": "^4.21.1",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.9",
-    "postcss": "^8.4.48",
+    "postcss": "^8.4.49",
     "tailwindcss": "^3.4.1",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-plugin-iconify": "^1.4.4",
