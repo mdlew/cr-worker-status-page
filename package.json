@@ -64,7 +64,7 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.19.2",
     "type-fest": "^4.28.0",
-    "typescript": "^5.3.3",
+    "typescript": "^5.7.2",
     "unplugin-auto-import": "^0.18.5",
     "unplugin-polish-tagged-templates": "0.1.1-beta.2",
     "vite": "^5.4.11",
