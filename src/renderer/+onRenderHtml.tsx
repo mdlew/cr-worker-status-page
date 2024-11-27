@@ -30,6 +30,7 @@ export const onRenderHtml: OnRenderHtmlAsync = async (pageContext) => {
       <title>${config.settings.title}</title>
       <head>
         <link rel="icon" href="/logo.svg" type="image/svg+xml" sizes="any">
+        <link rel="apple-touch-icon" href="/favicon.ico">
       	<link rel="preconnect" href="https://fonts.googleapis.com">
 	      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
