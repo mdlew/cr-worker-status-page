@@ -1,7 +1,6 @@
 import { fileURLToPath } from 'node:url'
 
-import { path } from 'zx'
-import { fs } from 'fs' // fs no longer in zx v8
+import { fs, path } from 'zx'
 import dedent from 'dedent'
 
 const __filename = fileURLToPath(import.meta.url)
