@@ -39,8 +39,8 @@ importers:
         specifier: 0.1.0-next.1
         version: 0.1.0-next.1
       vike:
-        specifier: 0.4.204
-        version: 0.4.204(react-streaming@0.3.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.1))
+        specifier: 0.4.206
+        version: 0.4.206(react-streaming@0.3.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.1))
       wrangler:
         specifier: ^3.85.0
         version: 3.85.0(@cloudflare/workers-types@4.20241022.0)
@@ -4367,8 +4367,8 @@ packages:
   vfile-location@3.2.0:
     resolution: {integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==}
 
-  vike@0.4.204:
-    resolution: {integrity: sha512-q9EU8FrlQ9Lowp2CP50gCUg+LRA3f8ST5pUtD+PxMGC6nJryc9LDOGe2sG0GQExdSmO4i32G5jWasX/fPoJNiA==}
+  vike@0.4.206:
+    resolution: {integrity: sha512-D2kb2MO2vxznFakdhxqsAk5htSs3RRVVo7ykYGFXyl0NObrEFY63bxOla0Q2CImwfkPGoLat0pv6Y22gkzs0BA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -9049,7 +9049,7 @@ snapshots:
 
   vfile-location@3.2.0: {}
 
-  vike@0.4.204(react-streaming@0.3.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.1)):
+  vike@0.4.206(react-streaming@0.3.43(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.1)):
     dependencies:
       '@brillout/import': 0.2.3
       '@brillout/json-serializer': 0.5.13
