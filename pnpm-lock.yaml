@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@brillout/json-serializer':
-        specifier: ^0.5.13
-        version: 0.5.13
+        specifier: ^0.5.15
+        version: 0.5.15
       '@cloudflare/kv-asset-handler':
         specifier: ^0.3.4
         version: 0.3.4
@@ -336,8 +336,8 @@ packages:
   '@brillout/import@0.2.3':
     resolution: {integrity: sha512-1T8WlD75eeFSMrptGy8jiLHmfHgMmSjWvLOIUvHmSVZt+6k0eQqYUoK4KbmE4T9pVLIfxvZSOm2D68VEqKRHRw==}
 
-  '@brillout/json-serializer@0.5.13':
-    resolution: {integrity: sha512-9FpmgpuoSISw6fAPVB2qwW1dGAADN28YbWpfwOErfcZxpBH4lsnejuY89qcivInnWXYJvyyPwghCuOTbtuaYFg==}
+  '@brillout/json-serializer@0.5.15':
+    resolution: {integrity: sha512-iLAyV1HNC3nG07ypBwCJohFrajY1HeZdfBBgGuRtMH/JPddgG9bPmoSI18A1RBx67vRmY6/8rgisjR5YfTvZHA==}
 
   '@brillout/picocolors@1.0.15':
     resolution: {integrity: sha512-VrgvPtfnKP/i8kxCAyQVd0DWg6xU8OZJndbLf/lrywd96UdMhnGL/PK42HhHhhwkDSkaiQU+zc+OPWpvqOe4Cg==}
@@ -4742,7 +4742,7 @@ snapshots:
 
   '@brillout/import@0.2.3': {}
 
-  '@brillout/json-serializer@0.5.13': {}
+  '@brillout/json-serializer@0.5.15': {}
 
   '@brillout/picocolors@1.0.15': {}
 
@@ -8310,7 +8310,7 @@ snapshots:
   react-streaming@0.3.44(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@brillout/import': 0.2.3
-      '@brillout/json-serializer': 0.5.13
+      '@brillout/json-serializer': 0.5.15
       '@brillout/picocolors': 1.0.15
       isbot-fast: 1.2.0
       react: 18.3.1
@@ -8968,7 +8968,7 @@ snapshots:
   vike@0.4.206(react-streaming@0.3.44(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.2)):
     dependencies:
       '@brillout/import': 0.2.3
-      '@brillout/json-serializer': 0.5.13
+      '@brillout/json-serializer': 0.5.15
       '@brillout/picocolors': 1.0.15
       '@brillout/require-shim': 0.1.2
       '@brillout/vite-plugin-server-entry': 0.5.1
