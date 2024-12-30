@@ -33,14 +33,14 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-streaming:
-        specifier: ^0.3.44
-        version: 0.3.44(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.3.46
+        version: 0.3.46(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tagged-classnames-free:
         specifier: 0.1.0-next.1
         version: 0.1.0-next.1
       vike:
         specifier: 0.4.206
-        version: 0.4.206(react-streaming@0.3.44(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.2))
+        version: 0.4.206(react-streaming@0.3.46(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.2))
       wrangler:
         specifier: ^3.98.0
         version: 3.98.0(@cloudflare/workers-types@4.20241205.0)
@@ -3698,8 +3698,8 @@ packages:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
     engines: {node: '>=0.10.0'}
 
-  react-streaming@0.3.44:
-    resolution: {integrity: sha512-/l7Lh5tYghEt9ovmFFVNoYMzLbyWPUrT+guk9zW8PcpN1ocQ06VAGHebjYz8IF2apfiGiiFEfQzNZ1xUVYCx0Q==}
+  react-streaming@0.3.46:
+    resolution: {integrity: sha512-Apk0mkMQb7+bJ3jRWsgr3+VNa6h0SLIIK6GIJMa/ZFlmJYn19k/hvLAC9EKcV1pYe5xt4Bq9emNIRiRyxYLC+g==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -8311,7 +8311,7 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react-streaming@0.3.44(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-streaming@0.3.46(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@brillout/import': 0.2.3
       '@brillout/json-serializer': 0.5.15
@@ -8974,7 +8974,7 @@ snapshots:
 
   vfile-location@3.2.0: {}
 
-  vike@0.4.206(react-streaming@0.3.44(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.2)):
+  vike@0.4.206(react-streaming@0.3.46(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.11(@types/node@22.10.2)):
     dependencies:
       '@brillout/import': 0.2.3
       '@brillout/json-serializer': 0.5.15
@@ -8990,7 +8990,7 @@ snapshots:
       source-map-support: 0.5.21
       vite: 5.4.11(@types/node@22.10.2)
     optionalDependencies:
-      react-streaming: 0.3.44(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-streaming: 0.3.46(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   vite@5.4.11(@types/node@22.10.2):
     dependencies:
