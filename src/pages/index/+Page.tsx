@@ -13,6 +13,7 @@ export default function Page() {
   const inputRef = useRef<HTMLInputElement>(null)
   const [inputFocused, setInputFocused] = useState(false)
   const [searchValue, setSearchValue] = useState(filter || '')
+  const deferredSearch = useDeferredValue(searchValue)
   const { mounted } = useMounted()
 
   useEffect(() => {
@@ -33,14 +34,14 @@ export default function Page() {
 
   useEffect(() => {
     const url = new URL(window.location.href)
-    if (searchValue.trim()) {
-      url.searchParams.set('filter', searchValue)
+    if (deferredSearch.trim()) {
+      url.searchParams.set('filter', deferredSearch)
       history.replaceState(null, '', url)
     } else {
       url.searchParams.delete('filter')
       history.replaceState(null, '', url)
     }
-  }, [searchValue])
+  }, [deferredSearch])
 
   if (config.settings.csr === true && !mounted) {
     return null
@@ -87,7 +88,7 @@ export default function Page() {
           allMonitors={allMonitors}
           data={kvData}
           className={cls`mt-4`}
-          search={searchValue}
+          search={deferredSearch}
         />
       </main>
       <footer className='my-4 flex justify-between'>
